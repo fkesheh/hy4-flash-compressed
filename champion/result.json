@@ -1,19 +1,23 @@
 {
-  "bytes": 158630,
-  "score": 0.9045407555603754,
+  "bytes": 158596,
+  "score": 0.8983728138756878,
   "projections": {
     "gate-up": {
-      "bytes": 106918,
-      "sha256": "a40d0ced725108c924e04b3f7ebd6cc52bfa30eaff8e26ea43d027940d4626e8",
-      "relative_error": 0.900517486702663,
-      "method": "ITQ seed 53, 320 sweeps, ranks 169/118"
+      "bytes": 107343,
+      "sha256": "decb8833ff723e6f04193c39d4798806ce889b2b907deb0eadb702334f6a5c91",
+      "format": "SVQ1",
+      "file": "gate-up.svq",
+      "relative_error": 0.8946821292246243,
+      "method": "ITQ seed 53, 240 sweeps, ranks 182/129; SVQ1 learned scale codebooks (16 centroids, 4-bit indices)"
     },
     "down": {
-      "bytes": 51712,
-      "sha256": "72493b5f52a162c74c855f07d9e6b129d37690ca266b3dcb00152cc2bbbfa8b9",
-      "relative_error": 0.9123348067281389,
-      "method": "ITQ seed 53, 240 sweeps, ranks 169/118"
+      "bytes": 51253,
+      "sha256": "aa421d505f807d612277e19f036d86410b60e75b72d9d819888fa24481d45f1a",
+      "format": "SVQ1",
+      "file": "down.svq",
+      "relative_error": 0.9055261148217199,
+      "method": "ITQ seed 53, 240 sweeps, ranks 182/129; SVQ1 learned scale codebooks (16 centroids, 4-bit indices)"
     }
   },
-  "format": "HYB1"
+  "format": "SVQ1"
 }

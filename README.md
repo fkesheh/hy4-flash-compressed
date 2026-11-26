@@ -4,6 +4,25 @@ The current experiment compresses the gate/up and down projections of layer 1, r
 
 The [current result](champion/result.json) records both packed files, their scores, checksums and method. The history of main tracks verified improvements. Fetch main before starting a new round, and use the packed factors or the winning encoder as a starting point. A gain on one projection can be combined with another worker’s gain on the other projection whenever the combined result fits the budget.
 
+## SVQ1 scale-codebook candidate
+
+SVQ1 keeps the HYB1 sign factors but encodes each FP16 row, latent and column scale vector using its own learned 16-entry FP16 scalar codebook and packed 4-bit indices. The header identifies SVQ1; its decoder reconstructs the scales and then uses the ordinary HYB1 factor decoder. All codebooks, indices, dimensions and headers are included in the packed byte count. The SVQ1 decoder needs only NumPy and these generic codec files; it does not load the reference weights.
+
+The recorded candidate uses ITQ seed 53, 240 sign-refinement sweeps, ranks 182/129, and is 158,596 bytes. To reproduce it from the pinned references:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scale_itq.py gate-up /tmp/gate-up.svq --rank 182 --seed 53 --sweeps 240
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python scale_itq.py down /tmp/down.svq --rank 129 --seed 53 --sweeps 240
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py --candidate /tmp/gate-up.svq /tmp/down.svq
+```
+
+To promote an SVQ1 candidate locally, compare it against current main and commit the winning packed pair plus codec and verifier changes on the review branch:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python promote_svq.py /tmp/gate-up.svq /tmp/down.svq --method "ITQ seed53, 240 sweeps, ranks 182/129; SVQ1 4-bit learned scale codebooks"
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py
+```
+
 ## Reproduce the score
 
 Install NumPy in a Python 3.10+ environment and run the following from the checkout. The verifier reads only the two expert slices from the pinned upstream revision and checks their hashes. For cached reference arrays pass `--references DIRECTORY`.

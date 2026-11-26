@@ -7,6 +7,7 @@ from pathlib import Path
 import numpy as np
 
 from compress import load_matrix, unpack
+from scale_vq import decode_factors
 
 HERE = Path(__file__).resolve().parent
 CAP = 158632
@@ -33,6 +34,15 @@ def reference(name, directory):
     return w.astype(np.float64)
 
 
+def decode(raw):
+    magic = raw[:4]
+    if magic == b"HYB1":
+        return unpack(raw)
+    if magic == b"SVQ1":
+        return decode_factors(raw)
+    raise ValueError(f"Unknown packed format {magic!r}")
+
+
 def evaluate(paths, refs=None):
     sizes = [p.stat().st_size for p in paths]
     if sum(sizes) > CAP:
@@ -40,7 +50,7 @@ def evaluate(paths, refs=None):
     errors, norms, parts = [], [], {}
     for (name, (_, shape, _)), path in zip(TENSORS.items(), paths, strict=True):
         raw = path.read_bytes()
-        left, right = unpack(raw)
+        left, right = decode(raw)
         if (left.shape[0], right.shape[1]) != shape:
             raise ValueError("Wrong matrix dimensions")
         w = reference(name, refs)
@@ -52,6 +62,7 @@ def evaluate(paths, refs=None):
         errors.append(error)
         norms.append(norm)
         parts[name] = dict(bytes=len(raw), sha256=hashlib.sha256(raw).hexdigest(),
+                           format=raw[:4].decode("ascii"), file=path.name,
                            relative_error=(error/norm)**0.5)
     return dict(bytes=sum(sizes), score=(sum(errors)/sum(norms))**0.5, projections=parts)
 
@@ -59,10 +70,17 @@ def evaluate(paths, refs=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--references", type=Path)
+    parser.add_argument("--candidate", nargs=2, type=Path, metavar=("GATE_UP", "DOWN"),
+                        help="Score these packed projections instead of the recorded champion")
     args = parser.parse_args()
+    if args.candidate:
+        print(json.dumps(evaluate(args.candidate, args.references), indent=2))
+        return
     folder = HERE / "champion"
-    measured = evaluate([folder / f"{n}.hyb" for n in TENSORS], args.references)
     manifest = json.loads((folder / "result.json").read_text())
+    paths = [folder / manifest.get("projections", {}).get(n, {}).get("file", f"{n}.hyb")
+             for n in TENSORS]
+    measured = evaluate(paths, args.references)
     if abs(measured["score"] - manifest["score"]) > 1e-6 or any(
             measured["projections"][n]["sha256"] != manifest["projections"][n]["sha256"]
             for n in TENSORS):
