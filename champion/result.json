@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8946701378864259,
+  "score": 0.8946689769521078,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "2df804a95602f13c5cd52c3e2ec545ea368c93bb3bf19b455a2137e40e738541",
+      "sha256": "7a344f684374050892de6e5eeff7cf77cbc2ea7529b684ddd6ac0ea642a1244a",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8910469393888399,
-      "method": "Two scale-codebook refit rounds from 9805857"
+      "relative_error": 0.8910459808021276,
+      "method": "Additional 0.03125% seed47 perturbation plus 80 fixed sweeps from ec93670"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "902d7e7580b4d71d574d6dd0cace4aecfbd0567ff62660fdbd933fb4ab1e6b46",
+      "sha256": "8365c8bbf5eb090bd9f176a990cc990f5eca94fd5a926ef7ea79943798e81054",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9016932362148036,
-      "method": "Down: seed17 0.25% perturb/refit plus 16 fixed sweeps; gate/up retained"
+      "relative_error": 0.9016916853221745,
+      "method": "Additional 0.03125% seed47 perturbation plus 80 fixed sweeps from ec93670"
     }
   },
   "format": "SVQ1"
