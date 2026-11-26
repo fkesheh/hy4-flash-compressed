@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8973404479237096,
+  "score": 0.8972653611465988,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "17095643f6244de4ab688dac9b50d02f06eb3799f8062e5e7a6d36dcd64eb5bf",
+      "sha256": "d3947b9e5f06ddd8f65ff25f176ecf1d0c4eb3dc48c9652b4e9b6eca2a22b52f",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8937452315694504,
-      "method": "ITQ seeds80/101, 240 sweeps; 10% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
+      "relative_error": 0.8936684791562197,
+      "method": "593de88 SVQ1 leader; fixed-codebook sign sweeps +8"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "7dd1d44eeb1f4423d1efdafb9c4dded4f220cd4fdcee9f714fbd4e7e16a5c48f",
+      "sha256": "dcb158125f0f98bd6bab9e0741b1a83cc9308b3714ec1ed0d2f48c48ecd1870c",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9043097466524677,
-      "method": "ITQ seeds80/101, 240 sweeps; 10% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
+      "relative_error": 0.9042378663744903,
+      "method": "593de88 SVQ1 leader; fixed-codebook sign sweeps +8"
     }
   },
   "format": "SVQ1"
