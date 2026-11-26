@@ -1,14 +1,14 @@
 {
   "bytes": 158596,
-  "score": 0.8956450255425317,
+  "score": 0.895637548206214,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "c463c955554384f0ff705609bc3f0d4f576027ba7c20c45c7c1fe6b9e6fb5cdb",
+      "sha256": "6ccd23d54042aab860bdf46678cbecada099dd7fef8db3fb714bb94477fddfd7",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8920488002890561,
-      "method": "Gate/up: eight more fixed-codebook sweeps from c63de07. Down: 64 total fixed-codebook sweeps."
+      "relative_error": 0.8920374426476527,
+      "method": "Fixed-codebook sign refinement from c51c52d"
     },
     "down": {
       "bytes": 51253,
