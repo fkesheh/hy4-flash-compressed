@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8952226150222021,
+  "score": 0.8951987123623124,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "bd3d0619fb08348c09684f52bcbce664e389889c26e03035ccc9a622e013da33",
+      "sha256": "1a377574f9dfde263c3196d5c72ec3cf1b6aca2b78199821fbff255e250cb8e6",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.891628491273568,
-      "method": "Direct perturb/refit from b202b80, seed101, 2%, 160 sweeps"
+      "relative_error": 0.8915982821009367,
+      "method": "Gate/up: eight fixed-codebook sweeps from 98bc438. Down: 32 fixed sweeps after seed202 perturb/refit."
     },
     "down": {
       "bytes": 51253,
-      "sha256": "94529e2b8e4f1c76bf371cee64bfd13c7c232c4f2a6a0a721e83a02f55c60100",
+      "sha256": "ed9e9201c75e43d771d51f3b158add32bcfbcc1a5046c0669f5695791b89120b",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9021897116972395,
-      "method": "Down: seed 202, 5% perturbation, 80 refit sweeps and 16 fixed-codebook sweeps"
+      "relative_error": 0.9021779610977396,
+      "method": "Gate/up: eight fixed-codebook sweeps from 98bc438. Down: 32 fixed sweeps after seed202 perturb/refit."
     }
   },
   "format": "SVQ1"
