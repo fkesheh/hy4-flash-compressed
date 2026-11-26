@@ -1,12 +1,12 @@
 {
   "bytes": 158630,
-  "score": 0.9045433268298017,
+  "score": 0.9045407555603754,
   "projections": {
     "gate-up": {
       "bytes": 106918,
-      "sha256": "5a858d6e7a51d11839a50ce486044237684c7e2b4ec6f14f1b974c14b6a211e9",
-      "relative_error": 0.9005213939979265,
-      "method": "ITQ seed 53, 240 sweeps, ranks 169/118"
+      "sha256": "a40d0ced725108c924e04b3f7ebd6cc52bfa30eaff8e26ea43d027940d4626e8",
+      "relative_error": 0.900517486702663,
+      "method": "ITQ seed 53, 320 sweeps, ranks 169/118"
     },
     "down": {
       "bytes": 51712,
