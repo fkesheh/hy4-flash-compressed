@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8974372295517393,
+  "score": 0.8974060211393516,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "7eae334a07ec8a2a1dbe5a974b284401ab5de99554277fb4acbc37084b0019e7",
+      "sha256": "9b5ac9921a9187736fb9b3bd786aea9650cc989c6039526031af61c964ca4ee6",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8938375238431641,
-      "method": "8 additional fixed-scale SVQ1 sign sweeps from main 011ce6a; see experiments/rate-allocation/attempts.md"
+      "relative_error": 0.8938066507113657,
+      "method": "16 additional SVQ1 sign sweeps from main 011ce6a; see experiments/rate-allocation/attempts.md"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "b09ac8db8911cf7767e945e84ee73846db36496b3d6319c6540f27fd9a337fd9",
+      "sha256": "e05967dc5852c76b6c1723c7a667993029c5377c2520481fa8f1fc8fa9cd1458",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.904415184269858,
-      "method": "8 additional fixed-scale SVQ1 sign sweeps from main 011ce6a; see experiments/rate-allocation/attempts.md"
+      "relative_error": 0.9043833283093262,
+      "method": "16 additional SVQ1 sign sweeps from main 011ce6a; see experiments/rate-allocation/attempts.md"
     }
   },
   "format": "SVQ1"
