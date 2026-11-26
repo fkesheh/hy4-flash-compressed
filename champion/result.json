@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8948245792274331,
+  "score": 0.8947903262244885,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "b1c100672dc750aff71a455a78ed368a3e0b13cacfcfa850997c921be68986f6",
+      "sha256": "e76fde822fdea7e6d57df8c8936a5c433b21cdc4a541fa21c7e3be59ed9a6022",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.891208034524004,
-      "method": "Four stages of sign perturbation: seeds101/202/47/101 at 5%/3%/2%/1%, with 80 fixed-codebook sweeps per stage"
+      "relative_error": 0.8911652717590021,
+      "method": "Fifth stage: seed 202, 1% sign perturbation and 80 fixed-codebook sweeps from ee35849"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "49a90bb535ba4bdbc3d013e41c16cadaa61f02e6b6d31e449d2bf270e082f5d8",
+      "sha256": "251dcfa4f8d940710ff3a4e9e2cad3926748c8c297b1402425c1596f69b0c6ed",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9018348633428498,
-      "method": "Four stages of sign perturbation: seeds101/202/47/101 at 5%/3%/2%/1%, with 80 fixed-codebook sweeps per stage"
+      "relative_error": 0.9018170063988258,
+      "method": "Fifth stage: seed 202, 1% sign perturbation and 80 fixed-codebook sweeps from ee35849"
     }
   },
   "format": "SVQ1"
