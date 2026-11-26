@@ -1,6 +1,6 @@
 {
   "bytes": 158632,
-  "score": 0.9051149058442745,
+  "score": 0.9049973628364231,
   "projections": {
     "gate-up": {
       "bytes": 105762,
@@ -10,9 +10,9 @@
     },
     "down": {
       "bytes": 52870,
-      "sha256": "c0addc032deb9b525d5ff37d879bc0294197a053c332be1690d3b54869678018",
-      "relative_error": 0.9111058782284066,
-      "method": "itq.py --seed 17 --sweeps 80"
+      "sha256": "a64e1babf412f559a6be3f448f82bd915e48752b5fe351875569cd28b3aa861c",
+      "relative_error": 0.9107613722801841,
+      "method": "itq.py --seed 53 --sweeps 80"
     }
   },
   "format": "HYB1"
