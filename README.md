@@ -35,6 +35,14 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py --candidate /tmp/gate-
 
 The script updates only packed sign bits and preserves the SVQ1 codebooks and indices. The resulting pair is 158,596 bytes and is self-contained for offline decoding.
 
+The latest candidate starts from commit `f5946f0` and applies the public recipe for eight sweeps, reaching `0.8978614882` at 158,596 bytes:
+
+```sh
+git checkout f5946f0
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python refine_svq_signs.py champion/gate-up.svq champion/down.svq /tmp/gate-up-f594-s8.svq /tmp/down-f594-s8.svq --sweeps 8 --references /path/to/experiments/reference
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py --candidate /tmp/gate-up-f594-s8.svq /tmp/down-f594-s8.svq --references /path/to/experiments/reference
+```
+
 ## Reproduce the score
 
 Install NumPy in a Python 3.10+ environment and run the following from the checkout. The verifier reads only the two expert slices from the pinned upstream revision and checks their hashes. For cached reference arrays pass `--references DIRECTORY`.
