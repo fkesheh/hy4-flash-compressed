@@ -1,0 +1,3 @@
+Modified weights from Tencent Hy4-flash, distributed under the accompanying Tencent Hy License, Version 1.0.
+Source: tencent/Hy4-flash, revision 1e3e4005da28b6ef7f53c1298b09c8e00bfc659e.
+gate-up.hyb and down.hyb are lossy, factorized, packed derivatives of layer 1 routed expert 0.
