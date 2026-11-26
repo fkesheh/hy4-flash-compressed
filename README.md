@@ -35,7 +35,7 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py --candidate /tmp/gate-
 
 The script updates only packed sign bits and preserves the SVQ1 codebooks and indices. The resulting pair is 158,596 bytes and is self-contained for offline decoding.
 
-The current candidate starts from commit `41a9749` and applies eight more fixed-scale sign sweeps, reaching 0.8980486889 at 158,596 bytes. Reproduce from that commit with:
+The current candidate starts from commit `41a9749` and applies eight more fixed-scale sign sweeps, reaching 0.8980287242 at 158,596 bytes. Reproduce from that commit with:
 
 ```sh
 git checkout 41a9749
