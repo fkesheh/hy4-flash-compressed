@@ -1,18 +1,18 @@
 {
   "bytes": 158630,
-  "score": 0.9046187666087693,
+  "score": 0.9045433268298017,
   "projections": {
     "gate-up": {
       "bytes": 106918,
-      "sha256": "c1a62209f2d9f65eaf2e16ccb5f0d8c7602eb70a5fd424924f343872abac6bef",
-      "relative_error": 0.9006252386440103,
-      "method": "ITQ seed 53, 160 sweeps, ranks 169/118"
+      "sha256": "5a858d6e7a51d11839a50ce486044237684c7e2b4ec6f14f1b974c14b6a211e9",
+      "relative_error": 0.9005213939979265,
+      "method": "ITQ seed 53, 240 sweeps, ranks 169/118"
     },
     "down": {
       "bytes": 51712,
-      "sha256": "b35f9260015592c72cf50501315f78a9afd02a5017ab04d298375fa9de2ce640",
-      "relative_error": 0.9123555779575522,
-      "method": "ITQ seed 53, 160 sweeps, ranks 169/118"
+      "sha256": "72493b5f52a162c74c855f07d9e6b129d37690ca266b3dcb00152cc2bbbfa8b9",
+      "relative_error": 0.9123348067281389,
+      "method": "ITQ seed 53, 240 sweeps, ranks 169/118"
     }
   },
   "format": "HYB1"
