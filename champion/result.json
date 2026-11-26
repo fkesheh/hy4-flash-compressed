@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8965371935770291,
+  "score": 0.8965187401348353,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "dea483a08bd3298c8df5e27e33eb65b97426f9c04e69cab8eca360c44342a0a1",
+      "sha256": "503e5a3ea9efbd176412f16e19e34e8eb51434cd78f20ec0a7b74fe13bee335f",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8928796303076074,
-      "method": "residual-hybrid direct perturb/refit 10%; rate-allocation fixed-codebook sign sweeps +16"
+      "relative_error": 0.8928607835906415,
+      "method": "residual-hybrid direct perturb/refit 10%; rate-allocation fixed-codebook sign sweeps +24"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "2abbb6a2dd74c2b7660fd9d785ca1b982976c1c32bc44bbdc119020456060c88",
+      "sha256": "aefa31a7c7b831666663e1957bb523e9d4a44941a9ca4a6e80394c5131413a36",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.903626593947051,
-      "method": "residual-hybrid direct perturb/refit 10%; rate-allocation fixed-codebook sign sweeps +16"
+      "relative_error": 0.9036088973710823,
+      "method": "residual-hybrid direct perturb/refit 10%; rate-allocation fixed-codebook sign sweeps +24"
     }
   },
   "format": "SVQ1"
