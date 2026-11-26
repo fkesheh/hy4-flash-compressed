@@ -1,18 +1,18 @@
 {
-  "bytes": 158626,
-  "score": 0.9048588745621947,
+  "bytes": 158630,
+  "score": 0.9046187666087693,
   "projections": {
     "gate-up": {
-      "bytes": 109230,
-      "sha256": "0a15b9b7b021e03c279440c83c9016b61b2fe467858d40006f88ef1d303b9703",
-      "relative_error": 0.8988697231202258,
-      "method": "Iterative quantization seed 53, 160 sweeps, gate/up rank 173 and down rank 112."
+      "bytes": 106918,
+      "sha256": "c1a62209f2d9f65eaf2e16ccb5f0d8c7602eb70a5fd424924f343872abac6bef",
+      "relative_error": 0.9006252386440103,
+      "method": "ITQ seed 53, 160 sweeps, ranks 169/118"
     },
     "down": {
-      "bytes": 49396,
-      "sha256": "e724cea4943b1a0b30db8b974aab851b1998917826d4db06cb0390ce3217217a",
-      "relative_error": 0.9164247117162961,
-      "method": "Iterative quantization seed 53, 160 sweeps, gate/up rank 173 and down rank 112."
+      "bytes": 51712,
+      "sha256": "b35f9260015592c72cf50501315f78a9afd02a5017ab04d298375fa9de2ce640",
+      "relative_error": 0.9123555779575522,
+      "method": "ITQ seed 53, 160 sweeps, ranks 169/118"
     }
   },
   "format": "HYB1"
