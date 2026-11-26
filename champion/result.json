@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8963682990809603,
+  "score": 0.8963362660884955,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "d48c61b2e36c3156f4f49d955e157a16c33fee739384d46568887a4369eb975d",
+      "sha256": "aa5187280e549f3586505b3417f12c9f30a40150efad2c942017d4039962f5fe",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8928494120908325,
-      "method": "Gate/up: peer perturb/refit plus 40 fixed-codebook sweeps"
+      "relative_error": 0.8928376395323587,
+      "method": "Gate/up: peer perturb/refit plus 48 fixed-codebook sweeps. Down: seed 101, 8% direct sign perturbation and 80 refinement sweeps."
     },
     "down": {
       "bytes": 51253,
-      "sha256": "85a930400f6d5befd09c19b619fbae821ac1c1a2eacec976df295f428a307330",
+      "sha256": "4c6c4b4acd296382af531e783155a72b5ff8bf6e9de43b794909fb082c54933e",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9031904393151979,
-      "method": "Down-only direct sign perturbation seed 101, 6%, 80 refinement sweeps"
+      "relative_error": 0.9031193496285508,
+      "method": "Gate/up: peer perturb/refit plus 48 fixed-codebook sweeps. Down: seed 101, 8% direct sign perturbation and 80 refinement sweeps."
     }
   },
   "format": "SVQ1"
