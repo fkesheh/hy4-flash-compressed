@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8959060890370933,
+  "score": 0.895892038843348,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "c5895ece33f2a7fbaa199d51896528cecaa4d16e0fe27ce708cb8f27b8ed6914",
+      "sha256": "6440f5e45c6ed0163a15b1366936dbd02ffd86f99e3600fe8f372ee4d5234aa2",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8923948446847294,
-      "method": "Eight fixed-codebook sign sweeps on mixed pair cb2e1a8"
+      "relative_error": 0.8923839527411934,
+      "method": "16 fixed-codebook refinement sweeps on mixed pair cb2e1a8"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "3087abb1312c03569812a31bd42e3f4d8e7afc22c7faa8943973481883935a55",
+      "sha256": "8acd45ed58ac5e496a92b3208e7624e8788171de40ba31b1c9a2789e2a177b89",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9027134770336777,
-      "method": "Eight fixed-codebook sign sweeps on mixed pair cb2e1a8"
+      "relative_error": 0.9026933382379237,
+      "method": "16 fixed-codebook refinement sweeps on mixed pair cb2e1a8"
     }
   },
   "format": "SVQ1"
