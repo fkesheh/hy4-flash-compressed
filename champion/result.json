@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8946568416888735,
+  "score": 0.8946566155793603,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "7c73b75b8e82c2404eae7b8df6677fb3347ea3f15ae094507a23ef8b5b5a37cb",
+      "sha256": "b80cc2a4bb136b67448bf8de3db4973117cf8768407fb749189b9f9bb8820ac0",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8910316480601397,
-      "method": "Gate/up: seed202 0.0078125% sign perturbation and 80 fixed-codebook sweeps"
+      "relative_error": 0.8910313900615494,
+      "method": "0.00390625% seed31 perturbation plus 80 fixed sweeps from f75b2c3"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "d3e7a493d9e6609e851ba2c861285d5f1f62ea9f3abfa40dd475d0a7f40aab57",
+      "sha256": "be65f711cfbdbba16e51c8a2636ad6db374872fefb836372130d00b1009c8780",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9016837838115382,
-      "method": "0.0078125% seed17 perturbation plus 80 fixed sweeps from 250bc01"
+      "relative_error": 0.9016836191382694,
+      "method": "0.00390625% seed31 perturbation plus 80 fixed sweeps from f75b2c3"
     }
   },
   "format": "SVQ1"
