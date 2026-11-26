@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8947886095974205,
+  "score": 0.894754274691323,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "e76fde822fdea7e6d57df8c8936a5c433b21cdc4a541fa21c7e3be59ed9a6022",
+      "sha256": "d59418724d9d31e9dd4cb13d3c0e67b5705db47c5d1fe3648fe13afe6dfb360b",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8911652717590021,
-      "method": "Fifth stage: seed 202, 1% sign perturbation and 80 fixed-codebook sweeps from ee35849"
+      "relative_error": 0.8911438706838932,
+      "method": "Gate/up: seed47 0.5% perturb and 80 fixed sweeps. Down: seed101 1% perturb and 80 refit sweeps."
     },
     "down": {
       "bytes": 51253,
-      "sha256": "d6e2744a062a3d968eaec15bb22fbf48cafe4665508b67c32834b351275d8306",
+      "sha256": "c264a1ff0009049950887ad382c740f013d1e61efa0d861c21d9d9d4b71de267",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9018119819231173,
-      "method": "Down: two scale-codebook refit rounds from 127af14"
+      "relative_error": 0.9017527226389901,
+      "method": "Gate/up: seed47 0.5% perturb and 80 fixed sweeps. Down: seed101 1% perturb and 80 refit sweeps."
     }
   },
   "format": "SVQ1"
