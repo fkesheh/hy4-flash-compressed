@@ -1,14 +1,14 @@
 {
   "bytes": 158596,
-  "score": 0.8952634886096213,
+  "score": 0.8952617130805992,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "9f51bd24caa1a9b8a855bc0409d86bedb5fec30f1e7b8abd08e41af6d14efe80",
+      "sha256": "93fd2c604c6b66c013e92d2b8b12e56a5a550fe898817bebb0c229f34113115f",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8916628482230233,
-      "method": "Down: seed 202, 5% sign perturbation and 80 refit sweeps. Gate/up retained from main."
+      "relative_error": 0.8916601512836486,
+      "method": "Gate/up: 32 fixed-codebook sign sweeps from b202b80"
     },
     "down": {
       "bytes": 51253,
