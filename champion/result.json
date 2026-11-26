@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8951491760634438,
+  "score": 0.8950784639638943,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "d49ad0ee18e2d4f3bb007646daf0b26b3df9cb6ab3ffa3fcc2226600e307852a",
+      "sha256": "67da35830522c66b5b1912188777889112de43525cf3dcea50a089ab022be00b",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8915571707056273,
-      "method": "Direct perturb/refit from 98bc438, seed 101, 3% flips, 160 sweeps"
+      "relative_error": 0.8914776947143257,
+      "method": "5% sign perturbation and 80 refit sweeps; gate seed 47, down seed 202"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "8d132d343436164aafe606e8446f69081ba2898aad1ba6c42298d207976d2e46",
+      "sha256": "f93614108d1df8a4d8f280ec8ded3e36ba7605e1de744d544eebf1340aecad6e",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.902112187025297,
-      "method": "Direct perturb/refit from 98bc438, seed 101, 3% flips, 160 sweeps"
+      "relative_error": 0.9020583604396961,
+      "method": "5% sign perturbation and 80 refit sweeps; gate seed 47, down seed 202"
     }
   },
   "format": "SVQ1"
