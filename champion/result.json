@@ -1,6 +1,6 @@
 {
   "bytes": 158596,
-  "score": 0.8946955975039269,
+  "score": 0.8946948712892988,
   "projections": {
     "gate-up": {
       "bytes": 107343,
@@ -12,11 +12,11 @@
     },
     "down": {
       "bytes": 51253,
-      "sha256": "dba1654645176ae2f8d00f771af402348e9099586eb93c460257b31597aca521",
+      "sha256": "6be087b6531e1d4e16024318a284b9852125ac4497346cac3b6a5f81a1749c8c",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9017109764214186,
-      "method": "Gate/up: two scale-codebook refits from 7b68f97. Down: 16 fixed sweeps after seed202 perturbation and refit."
+      "relative_error": 0.9017088508073573,
+      "method": "Gate/up: scale-codebook refit from 7b68f97. Down: seed202 0.25% perturbation and 80 refit sweeps."
     }
   },
   "format": "SVQ1"
