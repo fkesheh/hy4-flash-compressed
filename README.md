@@ -23,6 +23,18 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python promote_svq.py /tmp/gate-up.svq 
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py
 ```
 
+## Post-quantization binary sign refinement
+
+The current result starts from the mixed seed-53 gate/up and seed-101 down SVQ1 pair at commit `df0a4593`. Four alternating sign-coordinate sweeps, using the decoded 4-bit row, latent and column scales as fixed weights, improve the combined error to `0.8982563499` without changing the payload size. The generic recipe is `refine_svq_signs.py`:
+
+```sh
+git checkout df0a4593
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python refine_svq_signs.py champion/gate-up.svq champion/down.svq /tmp/gate-up-s4.svq /tmp/down-s4.svq --sweeps 4 --references /path/to/experiments/reference
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python verify.py --candidate /tmp/gate-up-s4.svq /tmp/down-s4.svq --references /path/to/experiments/reference
+```
+
+The script updates only packed sign bits and preserves the SVQ1 codebooks and indices. The resulting pair is 158,596 bytes and is self-contained for offline decoding.
+
 ## Reproduce the score
 
 Install NumPy in a Python 3.10+ environment and run the following from the checkout. The verifier reads only the two expert slices from the pinned upstream revision and checks their hashes. For cached reference arrays pass `--references DIRECTORY`.
