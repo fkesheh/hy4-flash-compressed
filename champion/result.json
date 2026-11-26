@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8976783531746039,
+  "score": 0.8975088080513627,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "87b415d722baa65e7402df5fb9a251be0afc2698dc3bb7d15c2e8ac28d51f014",
+      "sha256": "71191f5ab898c4e9b4b9f40f3cf162729fc9533f649d6398c9ad5e00bb978b4e",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8941078128283523,
-      "method": "ITQ seeds80/101, 240 sweeps; 4% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
+      "relative_error": 0.8939125230825551,
+      "method": "ITQ seeds80/101, 240 sweeps; 6% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "4dc892f49c46e6c5a69e2c30897e092e62de50cf21adb42b3874e5662510323b",
+      "sha256": "7d1839a937d1fa84fa6618edf278aa798d6440a5caaa38aad9b6f784be4a0c22",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9046001108648501,
-      "method": "ITQ seeds80/101, 240 sweeps; 4% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
+      "relative_error": 0.9044801738094376,
+      "method": "ITQ seeds80/101, 240 sweeps; 6% factor sign perturbation seed47; 80 residual-refinement sweeps; SVQ1 4-bit scales"
     }
   },
   "format": "SVQ1"
