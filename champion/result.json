@@ -1,22 +1,22 @@
 {
   "bytes": 158596,
-  "score": 0.8982868108211727,
+  "score": 0.8982563499421526,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "decb8833ff723e6f04193c39d4798806ce889b2b907deb0eadb702334f6a5c91",
+      "sha256": "95207465b7f928407767e3da833a53fa8f56863a5b1ffa814cc1483338f7d106",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8946821292246243,
-      "method": "ITQ seed53 gate/up and seed101 down, 240 sweeps, rank182/129, SVQ1 4-bit scale codebooks"
+      "relative_error": 0.8946546097218518,
+      "method": "Four alternating binary sign sweeps on SVQ1 leader factors, fixed 4-bit scale codebooks"
     },
     "down": {
       "bytes": 51253,
-      "sha256": "cb30527a7184587708d5344d4e0e8a8646f63c3338d3a059614da1d09e9b563f",
+      "sha256": "2cc8b72fa0a6ecfc0258287cd886e63dc685dc233e98cffc66b5d100083a4050",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9052743933752,
-      "method": "ITQ seed53 gate/up and seed101 down, 240 sweeps, rank182/129, SVQ1 4-bit scale codebooks"
+      "relative_error": 0.9052382627243443,
+      "method": "Four alternating binary sign sweeps on SVQ1 leader factors, fixed 4-bit scale codebooks"
     }
   },
   "format": "SVQ1"
