@@ -1,21 +1,21 @@
 {
   "bytes": 158596,
-  "score": 0.8947306194214218,
+  "score": 0.8947304676696595,
   "projections": {
     "gate-up": {
       "bytes": 107343,
-      "sha256": "743ed6192c41baf495e877a672e9937ceb444022314487b62aa72f554a597295",
+      "sha256": "7510dce8cb4b6afab12af51665386849f96642b653251f2a703e8f14139f3c40",
       "format": "SVQ1",
       "file": "gate-up.svq",
-      "relative_error": 0.8911220093577137,
-      "method": "Gate/up: two scale-codebook refit rounds from 1b60cae"
+      "relative_error": 0.8911217788494631,
+      "method": "Gate/up: 0.5% staged sign perturbation and 80 fixed-codebook sweeps; see rate-allocation attempts.md"
     },
     "down": {
       "bytes": 51253,
       "sha256": "c23ed1cf54efbdc4a5ce46708ca91cf70f6ab8890029b606910f3d180268575c",
       "format": "SVQ1",
       "file": "down.svq",
-      "relative_error": 0.9017256093653113,
+      "relative_error": 0.9017256093700167,
       "method": "Additional 0.25% seed47 packed-sign perturbation plus 80 fixed-codebook sweeps from current five-stage main"
     }
   },
