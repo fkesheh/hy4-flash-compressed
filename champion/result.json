@@ -1,18 +1,18 @@
 {
   "bytes": 158632,
-  "score": 0.9094498473926337,
+  "score": 0.9051149058442745,
   "projections": {
     "gate-up": {
       "bytes": 105762,
-      "sha256": "9a95a8b6349e157045f5c4c25efc3fdfd4c900dbe493b40028ac98744ba4f16d",
-      "relative_error": 0.9069181460974168,
-      "method": "compress.py --expert 0 --bpw 0.18 --sign-sweeps 12"
+      "sha256": "72d5a572bcbefae077e673f1de39b32700bc11c0bc90e20f483fc5376a7ea833",
+      "relative_error": 0.9020270605996582,
+      "method": "itq.py --seed 17 --sweeps 80"
     },
     "down": {
       "bytes": 52870,
-      "sha256": "0d54c0cda5b2bffb5c97a0f7d2f193d6664f541b064c04b1eac1cd7ab2301f40",
-      "relative_error": 0.9143663175203046,
-      "method": "compress.py --expert 0 --bpw 0.18 --sign-sweeps 12"
+      "sha256": "c0addc032deb9b525d5ff37d879bc0294197a053c332be1690d3b54869678018",
+      "relative_error": 0.9111058782284066,
+      "method": "itq.py --seed 17 --sweeps 80"
     }
   },
   "format": "HYB1"
